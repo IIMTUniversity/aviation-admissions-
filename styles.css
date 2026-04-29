@@ -106,9 +106,9 @@ ul {
   width: 100%;
   padding: 1.2rem 0;
   z-index: 1000;
-  background: #021b38; /* Opaque brand blue */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, #042a56, #021b38); /* Rich Glossy Opaque Blue */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(66, 165, 245, 0.3); /* Subtle sky blue accent */
   transition: all 0.4s ease;
 }
 
