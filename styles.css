@@ -104,13 +104,17 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   z-index: 1000;
-  background: rgba(2, 27, 56, 0.98);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background: var(--primary); /* Solid brand blue */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background 0.3s ease;
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  padding: 0.8rem 0;
+  background: #01152a; /* Slightly darker blue on scroll */
 }
 
 .nav-container {
@@ -179,15 +183,15 @@ ul {
   background-color: #021b38;
   background-image: url('aviation-hero-premium.png');
   background-size: cover;
-  background-position: center top;
+  background-position: center 0; /* Start from top */
   background-repeat: no-repeat;
-  min-height: 850px;
+  min-height: 90vh; /* Dynamic height based on viewport */
   display: flex;
   align-items: center;
   justify-content: center;
-  image-rendering: -webkit-optimize-contrast;
+  padding-top: 80px; /* Offset for the fixed navbar */
   image-rendering: high-quality;
-  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .hero-overlay {
