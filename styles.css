@@ -110,12 +110,7 @@ ul {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transform: translateY(-92%);
-  transition: transform 0.3s ease-out;
-}
-
-.navbar:hover {
-  transform: translateY(0);
+  transition: background 0.3s ease;
 }
 
 .nav-container {
